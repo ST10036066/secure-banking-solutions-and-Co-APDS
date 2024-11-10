@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
@@ -22,4 +23,15 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.1"
   }
+=======
+  "name": "demo-repo",
+  "version": "0.2.0",
+  "description": "A sample package.json",
+  "dependencies": {
+    "@angular/forms": "^18.2.7",
+    "@angular/router": "^18.2.7",
+    "@primer/css": "17.0.1"
+  },
+  "license": "MIT"
+>>>>>>> 0362c7a956cd6b9a58a6d4af373b8966e89c1fd2
 }
