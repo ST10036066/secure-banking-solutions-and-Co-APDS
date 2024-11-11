@@ -1,16 +1,106 @@
-# Project Structure
-The project includes:
-- A folder labeled **APDS** containing the complete source code.
-- The **GitHub repository** link for the project.
-- A **README** file outlining the steps for setup and usage.
+### **POE Goals for APDS**
+Team members:
+Azania Ncube- ST10036066(PM)
+Adrian Silver -ST10082035
+Mushfeeq Hartnick - ST10082857
+Cameron Colley - ST10037966
 
-## Team Members
-This project was developed by the following team members:
-- Azania Aria - ST10036066
-- Mushfeeq Hartnick - ST10082857
-- Adrian Silver - ST10082035
-- Cameron Colley - ST10037966
+All team members are from Group two. 
 
+Within this folder there is
+	-This readme file
+	-A folder showing the CircleCi config.yml tests screenshots
+	-The folder taht will be used to open VS Code(Secure  Banking Solution and Co-APDS)
+	- A word document describing the ethical use of AI throughout this assignment. The document explain how AI has 	been helpful with handling new experienced issues. 
+
+Important links:
+	Please copy this GitHub link if you need to check out the GitHub organization and repo used for this POE.
+		Repo with circleci: https://github.com/ST10036066/secure-banking-solutions-and-Co-APDS
+		Org repo used for sharing files: https://github.com/Secure-Banking-Solution-and-Co
+
+	YouTube video link that takes you to YouTube so the marker can watch the video that is required as part of the 	submission.
+		-(insert)
+
+----------------------------------------------------------------------------------------------------------------------
+The primary objectives are:
+- Create a **secure customer portal** for managing transactions.
+- Implement **strict security protocols** throughout.
+- Enable **bank employees** to manage and verify transactions before submission to SWIFT.
+
+### **Tasks and Assignments**
+
+#### **1. User Management Setup**
+
+- **Assigned to Adrian**
+  
+  **Steps:**
+  - **Step 1**: Implement a pre-configured list of users since no registration process is needed. These should be "hardcoded" or pulled from an initial data source in the system.
+  - **Step 2**: Set up the login functionality to authenticate users based on this predefined list. Ensure that employees log in using credentials stored securely (e.g., in the database).
+  - **Step 3**: Ensure that users have specific roles or permissions, if necessary, to restrict access to certain features (like viewing and verifying transactions).
+
+#### **2. Password Security (Hashing and Salting)**
+
+- **Assigned to Mushfeeq**
+  Feedback: Mushfeeq is a team player who constantly kept updating the whole group. 
+  **Steps:**
+  - **Step 1**: Integrate a password hashing library like `bcryptjs` (for Node.js) to hash and salt passwords.
+  - **Step 2**: Apply hashing and salting to all user passwords before storing them in the database.
+  - **Step 3**: Test the login function to verify that passwords are securely hashed and cannot be accessed in plain text.
+
+#### **3. Input Whitelisting with Regex Patterns**
+
+- **Assigned to Cameron**
+  There is room for improvement in terms of communication
+  **Steps:**
+  - **Step 1**: Identify all input fields that need validation, including login fields and transaction details.
+  - **Step 2**: Develop basic regular expressions (RegEx) to restrict unwanted characters (like SQL injection markers, `<script>` tags, etc.).
+  - **Step 3**: Apply these RegEx patterns to sanitize and validate user inputs on the client and server side.
+  - **Step 4**: Test inputs with various patterns to ensure the application rejects any potentially harmful input.
+
+#### **4. Secure Traffic with SSL and Security Libraries and MongoDB**
+
+- **Assigned to Azania (PM)**
+  
+  **Steps:**
+  - **Step 1**: Obtain or generate a valid SSL certificate and private key (consult with the IT/security team if necessary).
+  - **Step 2**: Configure the server to enforce SSL. Make sure all HTTP traffic is redirected to HTTPS.
+  - **Step 3**: Install and configure `Express Brute` to protect against brute force attacks and `Helmet` for setting secure HTTP headers.
+  - **Step 4**: Perform a security audit to verify that SSL is properly enforced across the portal.
+	-**Step 5**: Using the module lab guide ensure the connection string, MongoDB cluster and collection of hard coded employees is added
+
+#### **5. Transaction Processing 
+
+- **Assigned to Adrian and Cameron**
+  Feedback: Both team members need to improve in communication as discussed in the group. Updates were difficult to get from them but as a team we tried working with what they had at the last moment they could deliver
+
+  **Steps:**
+  - **Step 1 (Adrian)**: Design and set up a secure database schema to store transaction details, ensuring encryption for sensitive data fields.
+  - **Step 2 (Cameron)**: Build the interface for employees to view and verify transactions, displaying key information like payee account details and SWIFT codes.
+  - **Step 3 (Adrian and Cameron)**: Implement a "verified" button for each transaction entry and a "Submit to SWIFT" button to complete the transaction process.
+  - **Step 4 (Adrian)**: After submission, ensure the transaction status is updated and flagged for SWIFT transfer.
+
+#### **6. Final Review and Testing**
+
+- **All Team Members**
+
+  **Steps:**
+  - **Step 1**: Complete unit testing for each feature and conduct a brief code review session.
+  - **Step 2**: Coordinate with Azania to ensure everything meets security and functionality requirements.
+  - **Step 3**: Document your code changes and update the README to reflect any setup or operational instructions.
+  - **Step 4**: Prepare for a quick demo on Monday, showcasing the portal's core functionality and security features.
+
+Feedback of the entire group:
+There is room for improvement for communication and staying up to datw with what the project manager sends via the group. On the good side, group work challenged the project manager to push the team members as best as the project manager could do. 
+----------------------------------------------------------------------------------------
+The hardcoded employee details. Order starts from username followed by the password:
+PeterHlope, Banking@12Aw3z0m3
+AmahleVilakazi,Tr0stM3!
+ZuriKamau, S2v1ings*
+AlexMerwer, c0nn3ct#M0n3y
+---------------------------------------------------------------------------------------
+Thank you for reaching this far
+---------------------------------------------------------------------------------------
+###Additional information that has been useful and used :
 ## Repository Link
 (https://github.com/ST10036066/secure-banking-solutions-and-Co-APDS)
 # Secure Banking Solutions and Co  
@@ -109,3 +199,5 @@ Sensitive information, such as database connection strings and API keys, are sto
   - `200 OK`: `Login successful`
   - `400 Bad Request`: `User not found` or `Incorrect password`
   - `500 Internal Server Error`: If there was a problem during verification.
+
+-----------------------------------------------------------------------------------------------------------------------------
