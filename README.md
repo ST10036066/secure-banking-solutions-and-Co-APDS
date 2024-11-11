@@ -12,7 +12,7 @@ Within this folder there is
 	-A folder showing the CircleCi config.yml tests screenshots
 	-The folder taht will be used to open VS Code(Secure  Banking Solution and Co-APDS)
 	- A word document describing the ethical use of AI throughout this assignment. The document explain how AI has 	been helpful with handling new experienced issues. 
-
+	- folders labeled 'Project using circleci', is the project that uses circleci however the was a duplicate within the read only files therefore the backup has been included in the folder labeled 'Project after changes made' which is another folder without the duplicate keys.
 Important links:
 	Please copy this GitHub link if you need to check out the GitHub organization and repo used for this POE.
 		Repo with circleci: https://github.com/ST10036066/secure-banking-solutions-and-Co-APDS
