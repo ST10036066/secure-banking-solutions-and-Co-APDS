@@ -19,9 +19,7 @@ Important links:
 	Please copy this GitHub link if you need to check out the GitHub organization and repo used for this POE.
 		Repo with circleci: https://github.com/ST10036066/secure-banking-solutions-and-Co-APDS
 		Org repo used for sharing files: https://github.com/Secure-Banking-Solution-and-Co
-
-	YouTube video link that takes you to YouTube so the marker can watch the video that is required as part of the 	submission.
-		-(insert)
+  	The Youtube video link. Unfortunately, the video was too large to paste within the submission folder however the video is still available to watch on Youtube using the link: https://youtu.be/f49spL-hCbk?si=bavwnebkAWXlhLEk
 
 ----------------------------------------------------------------------------------------------------------------------
 The primary objectives are:
